@@ -11,16 +11,20 @@ func main() {
 	fmt.Println(gabriel.Nome)
 }
 
-type Endereco2 struct {
+type Endereco struct {
 	Logradouro string
 	Numero     string
 	Cidade     string
 	Estado     string
 }
 
-type Cliente2 struct {
+type Cliente struct {
 	Nome  string
 	Idade int
 	Ativo bool
-	Endereco2
+	Endereco
+}
+
+func (c Cliente) Desativar() {
+	c.Ativo = false
 }
