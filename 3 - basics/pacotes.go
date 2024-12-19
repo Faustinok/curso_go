@@ -1,7 +1,7 @@
 package main
 
 import (
-	matematica "curso/matematica"
+	matematica "curso/3 - matematica"
 	"fmt"
 )
 
